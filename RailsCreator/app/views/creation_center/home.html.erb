@@ -1,0 +1,20 @@
+<input type="text" placeholder="App Name..." id="app-name">
+<button type="button" id="new-app">Create New App</button>
+
+<script type="text/javascript">
+	$(function(){
+		$('#new-app').click(function(){
+			var app_name = $('#app-name').val();
+			$.ajax({
+				url: '/creation_center/new_app',
+				type: 'POST',
+				dataType: 'text',
+				data: {'app_name': app_name},
+				beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
+		        success: function(heroku_app_url) {
+		        	window.location = heroku_app_url;
+		        }
+			});
+		});
+	});
+</script>
