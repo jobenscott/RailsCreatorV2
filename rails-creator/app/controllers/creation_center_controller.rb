@@ -1,37 +1,19 @@
 class CreationCenterController < ApplicationController
   def home
-    # github = Github.new client_id: '', client_secret: '', org: 'RailsCreator'
+  
+    
 
-    # puts github.auth_code.to_yaml
     # authorize = github.authorize_url({'scope' => ['repo']})
     # puts authorize.to_yaml
     # token = github.get_token('')
     # puts token.to_yaml
-    # # puts scopes.to_yaml 
-    # repos = github.repos.list
-    # p 'repos buddy'
-    # repos.each do |repo|
-    #   p repo.full_name
-    # end
-
-    # branches = github.repos(:repo => "testing_it_out_13", :org => "RailsCreator").branches
-    # .create "name": "test_branch_1"
-    # , 'org': 'RailsCreator'
-    # puts branches.to_yaml
-
-    # repo = Github::Client::Repos.create :user => 'jobenscott', :repo => 'testing_it_out'
-    # puts repo.to_yaml
-    # repo.save
-    # p Dir['*']
-    # Dir.chdir('../rails-creator-apps')
-    # p Dir.pwd
 
   end
 
   def new_app
   	app_name = params[:app_name]
 
-    oauth_token = ''
+    oauth_token = ENV.fetch('OAUTH_TOKEN')
     github = Github.new oauth_token: oauth_token
 
     # get rails create app route
