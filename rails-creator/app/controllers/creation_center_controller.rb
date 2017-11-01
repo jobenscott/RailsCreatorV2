@@ -1,21 +1,12 @@
 class CreationCenterController < ApplicationController
   def home
-    # Github.configure do |c|
-    #   c.basic_auth = 'jobenscott:Sunshine22'
-    # end
-   
-    # github = Github.new client_id: '63c9b6b446bc369aee44', client_secret: '040d95c0d074763eca501b4553fe4383fa3f0430', org: 'RailsCreator'
-    # oauth_token = '4a392d81518aa677768bd9a26d99c932a50426e5'
-    # github = Github.new oauth_token: oauth_token
-     # oauth_token: oauth_token
+    # github = Github.new client_id: '', client_secret: '', org: 'RailsCreator'
 
-    # oauth_token: 'ca9fd10b60474d36bf30d4d47534173ed5217766'
     # puts github.auth_code.to_yaml
     # authorize = github.authorize_url({'scope' => ['repo']})
     # puts authorize.to_yaml
-    # token = github.get_token('43d64853ee3324b59f38')
+    # token = github.get_token('')
     # puts token.to_yaml
-    # scopes = github.oauth.create 'note' => 'something', 'scopes' => ['repo'], 'client_secret' => '040d95c0d074763eca501b4553fe4383fa3f0430'
     # # puts scopes.to_yaml 
     # repos = github.repos.list
     # p 'repos buddy'
@@ -40,7 +31,7 @@ class CreationCenterController < ApplicationController
   def new_app
   	app_name = params[:app_name]
 
-    oauth_token = '7b8e7cd2b3f23d9631cf5b1201418f6d61cffe74'
+    oauth_token = ''
     github = Github.new oauth_token: oauth_token
 
     # get rails create app route
