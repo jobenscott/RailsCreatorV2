@@ -5,6 +5,10 @@
 	$(function(){
 		$('#new-app').click(function(){
 			var app_name = $('#app-name').val();
+
+			$(this).attr('disabled', 'disabled');
+
+
 			$.ajax({
 				url: '/creation_center/new_app',
 				type: 'POST',

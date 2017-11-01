@@ -13,7 +13,7 @@ class CreationCenterController < ApplicationController
     # puts github.auth_code.to_yaml
     # authorize = github.authorize_url({'scope' => ['repo']})
     # puts authorize.to_yaml
-    # token = github.get_token('f2faad242d82079526b1')
+    # token = github.get_token('43d64853ee3324b59f38')
     # puts token.to_yaml
     # scopes = github.oauth.create 'note' => 'something', 'scopes' => ['repo'], 'client_secret' => '040d95c0d074763eca501b4553fe4383fa3f0430'
     # # puts scopes.to_yaml 
@@ -31,22 +31,24 @@ class CreationCenterController < ApplicationController
     # repo = Github::Client::Repos.create :user => 'jobenscott', :repo => 'testing_it_out'
     # puts repo.to_yaml
     # repo.save
-    # Dir.chdir('')
-    # p Dir["*"]
+    # p Dir['*']
+    # Dir.chdir('../rails-creator-apps')
+    # p Dir.pwd
 
   end
 
   def new_app
   	app_name = params[:app_name]
 
-    oauth_token = '536c7a5c9746d279bd8ac17ac02f81d863953519'
+    oauth_token = '7b8e7cd2b3f23d9631cf5b1201418f6d61cffe74'
     github = Github.new oauth_token: oauth_token
 
     # get rails create app route
     rails_creator_route = Dir.pwd
 
 	  # change to storage directory
-    Dir.chdir('generated_apps')
+    Dir.chdir('../rails-creator-apps')
+    rails_creator_apps_route = Dir.pwd
 
   	# start new thread for rails app creation
   	rails_app_creation = Thread.new do
@@ -72,7 +74,7 @@ class CreationCenterController < ApplicationController
 
     # re-write routes
     routes_rewrite = Thread.new do
-      system route_text+' > '+local_app_path+'/config/routes.rb'
+      system route_text+' > '+rails_creator_apps_route+'/'+app_name+'/config/routes.rb'
     end
 
     # wait for route re-write
@@ -170,6 +172,14 @@ class CreationCenterController < ApplicationController
 
     # return to rails creator directory
     Dir.chdir(rails_creator_route)
+
+    # remove generated app from temp storage
+    remove_generated_app = Thread.new do
+      system 'rm -rf '+rails_creator_apps_route+'/'+app_name
+    end
+
+    # print where we are for safe-keeping
+    Dir.pwd
 
 
     respond_to do |format|

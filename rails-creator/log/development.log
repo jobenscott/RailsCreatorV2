@@ -2239,3 +2239,228 @@ app/controllers/creation_center_controller.rb:60:in `new_app'
   Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
   Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
   Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (35.1ms)
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:12:30 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 345ms (Views: 324.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/creation_center/new_app" for 127.0.0.1 at 2017-10-31 21:12:35 -0700
+Processing by CreationCenterController#new_app as TEXT
+  Parameters: {"app_name"=>"auto-test-16"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ dir_chdir - rails-creator-apps):
+  
+app/controllers/creation_center_controller.rb:49:in `chdir'
+app/controllers/creation_center_controller.rb:49:in `new_app'
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.4ms)
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (26.1ms)
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:12:54 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:13:27 -0700
+Processing by CreationCenterController#home as HTML
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ dir_chdir - rails-creator-apps):
+  
+app/controllers/creation_center_controller.rb:34:in `chdir'
+app/controllers/creation_center_controller.rb:34:in `home'
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.0ms)
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:14:13 -0700
+  
+SyntaxError (/home/aaron/RailsCreatorEnvironment/rails-creator/app/controllers/creation_center_controller.rb:34: syntax error, unexpected '[', expecting '('
+    p Dir.['*']
+           ^
+/home/aaron/RailsCreatorEnvironment/rails-creator/app/controllers/creation_center_controller.rb:34: syntax error, unexpected ']', expecting keyword_end
+    p Dir.['*']
+               ^
+/home/aaron/RailsCreatorEnvironment/rails-creator/app/controllers/creation_center_controller.rb:181: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/creation_center_controller.rb:34: syntax error, unexpected '[', expecting '('
+app/controllers/creation_center_controller.rb:34: syntax error, unexpected ']', expecting keyword_end
+app/controllers/creation_center_controller.rb:181: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.9ms)
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.3ms)
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:14:20 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 214ms (Views: 213.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:14:46 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 222ms (Views: 210.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:15:23 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:15:50 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 227ms (Views: 210.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/creation_center/new_app" for 127.0.0.1 at 2017-10-31 21:15:54 -0700
+Processing by CreationCenterController#new_app as TEXT
+  Parameters: {"app_name"=>"auto-test-16"}
+Completed 500 Internal Server Error in 9024ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `local_app_path' for #<CreationCenterController:0x007ff6b809c0c0>):
+  
+app/controllers/creation_center_controller.rb:76:in `block in new_app'
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.7ms)
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.5ms)
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (139.9ms)
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:19:51 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 315ms (Views: 301.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/creation_center/new_app" for 127.0.0.1 at 2017-10-31 21:19:56 -0700
+Processing by CreationCenterController#new_app as TEXT
+  Parameters: {"app_name"=>"auto-test-16"}
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:21:44 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 327ms (Views: 312.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/creation_center/new_app" for 127.0.0.1 at 2017-10-31 21:21:49 -0700
+Processing by CreationCenterController#new_app as TEXT
+  Parameters: {"app_name"=>"auto-test-17"}
+Completed 500 Internal Server Error in 16505ms (ActiveRecord: 0.0ms)
+
+
+  
+Github::Error::Unauthorized (POST https://api.github.com/orgs/RailsCreator/repos?access_token=536c7a5c9746d279bd8ac17ac02f81d863953519: 401 - Bad credentials
+See: https://developer.github.com/v3):
+  
+app/controllers/creation_center_controller.rb:100:in `new_app'
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.text.erb (0.4ms)
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.4ms)
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.6ms)
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (21.8ms)
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:26:47 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 51ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:27:11 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 269ms (Views: 213.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:27:46 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2038ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:28:24 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 315ms (Views: 305.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/creation_center/new_app" for 127.0.0.1 at 2017-10-31 21:28:29 -0700
+Processing by CreationCenterController#new_app as TEXT
+  Parameters: {"app_name"=>"auto-test-18"}
+Completed 200 OK in 98190ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:33:48 -0700
+  
+SyntaxError (/home/aaron/RailsCreatorEnvironment/rails-creator/app/controllers/creation_center_controller.rb:175: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+ -rf 'rails_creator_apps_route+'/'+app_name
+                              ^
+/home/aaron/RailsCreatorEnvironment/rails-creator/app/controllers/creation_center_controller.rb:188: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/creation_center_controller.rb:175: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/creation_center_controller.rb:188: syntax error, unexpected keyword_end, expecting end-of-input
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.9ms)
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.3ms)
+  Rendered /home/aaron/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.5ms)
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:34:24 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 295ms (Views: 294.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-31 21:34:39 -0700
+Processing by CreationCenterController#home as HTML
+  Rendering creation_center/home.html.erb within layouts/application
+  Rendered creation_center/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 327ms (Views: 308.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/creation_center/new_app" for 127.0.0.1 at 2017-10-31 21:34:44 -0700
+Processing by CreationCenterController#new_app as TEXT
+  Parameters: {"app_name"=>"auto-test-20"}
+Completed 200 OK in 104143ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
