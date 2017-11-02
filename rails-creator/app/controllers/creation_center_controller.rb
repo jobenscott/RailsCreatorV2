@@ -1,7 +1,7 @@
 class CreationCenterController < ApplicationController
   def home
   
-    
+    # github = Github.new client_id: '', client_secret: '', org: 'RailsCreator'
 
     # authorize = github.authorize_url({'scope' => ['repo']})
     # puts authorize.to_yaml
