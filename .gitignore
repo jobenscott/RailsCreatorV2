@@ -5,9 +5,9 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
+/app/rails-creator/db/*.sqlite3
+/app/rails-creator/db/*.sqlite3-journal
 
 
 # ignore creds
-/config/application.yml
+/app/rails-creator/config/application.yml
