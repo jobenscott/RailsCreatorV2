@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 # use figaro for local environment variable handling
-gem 'figaro'
+# gem 'figaro'
 # github api
 gem 'github_api'
 # devise
