@@ -1,1 +1,1 @@
-web: cd rails-creator/bin/ && bundle exec rails server -p $PORT -e production
+web: cd /app/rails-creator/bin/ && bundle exec rails server -p $PORT -e production
